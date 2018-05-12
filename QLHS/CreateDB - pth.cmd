@@ -1,0 +1,1 @@
+SQLCMD -S PHANTRUNGHIEU -E -i CreateDB.sql

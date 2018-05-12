@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75486DBC-7E69-44CB-BE7B-7CFF5C48B90E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>QLHSGUI.My.MyApplication</StartupObject>
+    <RootNamespace>QLHSGUI</RootNamespace>
+    <AssemblyName>QLHSGUI</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>QLHSGUI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>QLHSGUI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmApDungChuongTrinh.Designer.vb">
+      <DependentUpon>frmApDungChuongTrinh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmApDungChuongTrinh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChuyenLop.Designer.vb">
+      <DependentUpon>frmChuyenLop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChuyenLop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChuyenHocKy.Designer.vb">
+      <DependentUpon>frmChuyenHocKy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChuyenHocKy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhapDiemTheoLoai.Designer.vb">
+      <DependentUpon>frmNhapDiemTheoLoai.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhapDiemTheoLoai.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhapDiemTheoMon.Designer.vb">
+      <DependentUpon>frmNhapDiemTheoMon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhapDiemTheoMon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLHocKy.Designer.vb">
+      <DependentUpon>frmQLHocKy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLHocKy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLLop.Designer.vb">
+      <DependentUpon>frmQLLop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLLop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLyChuongTrinh.Designer.vb">
+      <DependentUpon>frmQuanLyChuongTrinh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuanLyChuongTrinh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuyDinh.Designer.vb">
+      <DependentUpon>frmQuyDinh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuyDinh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemChuongTrinhHoc.Designer.vb">
+      <DependentUpon>frmThemChuongTrinhHoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemChuongTrinhHoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemHocKy.Designer.vb">
+      <DependentUpon>frmThemHocKy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemHocKy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemLop.Designer.vb">
+      <DependentUpon>frmThemLop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemLop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemMonHoc.Designer.vb">
+      <DependentUpon>frmThemMonHoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemMonHoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLKhoi.Designer.vb">
+      <DependentUpon>frmQLKhoi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLKhoi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLLoaiDiem.Designer.vb">
+      <DependentUpon>frmQLLoaiDiem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLLoaiDiem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLMonHoc.Designer.vb">
+      <DependentUpon>frmQLMonHoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLMonHoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLNamHoc.Designer.vb">
+      <DependentUpon>frmQLNamHoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLNamHoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLHocSinh.Designer.vb">
+      <DependentUpon>frmQLHocSinh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLHocSinh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLLoaiHocSinh.Designer.vb">
+      <DependentUpon>frmQLLoaiHocSinh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLLoaiHocSinh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemHocSinh.Designer.vb">
+      <DependentUpon>frmThemHocSinh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemHocSinh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemKhoi.Designer.vb">
+      <DependentUpon>frmThemKhoi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemKhoi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemLoaiDiem.Designer.vb">
+      <DependentUpon>frmThemLoaiDiem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemLoaiDiem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemLoaiHocSinhGUI.Designer.vb">
+      <DependentUpon>frmThemLoaiHocSinhGUI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemLoaiHocSinhGUI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemNamHoc.Designer.vb">
+      <DependentUpon>frmThemNamHoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemNamHoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmApDungChuongTrinh.resx">
+      <DependentUpon>frmApDungChuongTrinh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChuyenHocKy.resx">
+      <DependentUpon>frmChuyenHocKy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChuyenLop.resx">
+      <DependentUpon>frmChuyenLop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhapDiemTheoLoai.resx">
+      <DependentUpon>frmNhapDiemTheoLoai.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhapDiemTheoMon.resx">
+      <DependentUpon>frmNhapDiemTheoMon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLHocKy.resx">
+      <DependentUpon>frmQLHocKy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLLop.resx">
+      <DependentUpon>frmQLLop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLMonHoc.resx">
+      <DependentUpon>frmQLMonHoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLyChuongTrinh.resx">
+      <DependentUpon>frmQuanLyChuongTrinh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuyDinh.resx">
+      <DependentUpon>frmQuyDinh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemChuongTrinhHoc.resx">
+      <DependentUpon>frmThemChuongTrinhHoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemHocKy.resx">
+      <DependentUpon>frmThemHocKy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemLop.resx">
+      <DependentUpon>frmThemLop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemMonHoc.resx">
+      <DependentUpon>frmThemMonHoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLKhoi.resx">
+      <DependentUpon>frmQLKhoi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLLoaiDiem.resx">
+      <DependentUpon>frmQLLoaiDiem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLNamHoc.resx">
+      <DependentUpon>frmQLNamHoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLHocSinh.resx">
+      <DependentUpon>frmQLHocSinh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLLoaiHocSinh.resx">
+      <DependentUpon>frmQLLoaiHocSinh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemHocSinh.resx">
+      <DependentUpon>frmThemHocSinh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemKhoi.resx">
+      <DependentUpon>frmThemKhoi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemLoaiDiem.resx">
+      <DependentUpon>frmThemLoaiDiem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemLoaiHocSinhGUI.resx">
+      <DependentUpon>frmThemLoaiHocSinhGUI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemNamHoc.resx">
+      <DependentUpon>frmThemNamHoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QLHS1BUS\QLHS1BUS.vbproj">
+      <Project>{89503d9d-294e-40e0-8c3d-d38f73a629d9}</Project>
+      <Name>QLHS1BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QLHS1DTO\QLHS1DTO.vbproj">
+      <Project>{25ca7f8f-d495-4843-8e13-133f9e7920b8}</Project>
+      <Name>QLHS1DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility\Utility.vbproj">
+      <Project>{ac9d408a-10a6-4e83-9944-4b2864c6ba53}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
